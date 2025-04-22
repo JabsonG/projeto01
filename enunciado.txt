@@ -1,0 +1,46 @@
+/*Proposta de Projeto Integrador — BitDogLab
+
+    Enunciado
+Com o objetivo de revisar e consolidar os conhecimentos adquiridos sobre o microcontrolador
+RP2040 e os principais recursos disponíveis na placa de desenvolvimento BitDogLab, propõe-se a
+realização de um projeto prático individual, cuja concepção será de responsabilidade do aluno.
+Observação: Este trabalho é somente para os alunos que estão na trilha de Sistemas Embarcados.
+O projeto deverá integrar os seguintes conceitos e periféricos estudados:
+
+    • Leitura analógica por meio do potenciômetro do joystick, utilizando o conversor ADC do
+RP2040;
+    • Leitura de botões físicos (push-buttons) com tratamento de debounce, essencial para garantir a
+confiabilidade das entradas digitais;
+    • Utilização da matriz de LEDs, do LED RGB e do buzzer como saídas para feedback visual e
+sonoro;
+    • Exibição de informações em tempo real no display gráfico 128x64 (SSD1306), que se comunica
+com o RP2040 via interface I2C;
+    • Transmissão de dados e mensagens de depuração através da interface UART, permitindo a
+visualização em um terminal serial no computador;
+    • Emprego de interrupções para o tratamento eficiente de eventos gerados pelos botões;
+    • Estruturação do projeto no ambiente VS Code, previamente configurado para o desenvolvimento
+com o RP2040.
+    
+    Como funcionalidade obrigatória, o projeto deverá exibir no display SSD1306 um quadrado de 8x8
+pixels, inicialmente centralizado, que se moverá proporcionalmente aos valores capturados pelo
+joystick.
+Requisitos do Projeto
+O código deve estar bem estruturado e comentado para facilitar o entendimento e, consequentemente
+a sua correção.
+
+Entrega:
+Os seguintes itens devem ser entregues:
+Ficha da tarefa:
+Código: O código-fonte do projeto deve ser entregue em um link do seu repositório, contendo todos
+os arquivos necessários para sua execução.
+Vídeo de demonstração: Deve ser produzido um vídeo curto, contendo:
+• O aluno aparecendo pessoalmente para apresentar o projeto;
+• Uma explicação breve das funcionalidades implementadas;
+• A execução do projeto na placa BitDogLab;
+• O link para o vídeo deve ser compartilhado (YouTube ou Google Drive).*/
+
+O que eu quero: 
+    1 - Cada vez que o botão push-botton (com debounce e interrupções) for pressionado, que ocorra um alarme sonoro pelo buzzer e pela matriz de Led 5x5
+    2 - Leitura pelo joystick que module o PWM para os LEDs RGB
+    3 - Assim que o buzzer/matriz/led RGB for acionado, que ocorra uma sinalização pelo monitor serial
+    4 - Que a mesma mensagem que apareça no monitor serial do computador apareça no display ssd1306
